@@ -15,6 +15,8 @@ body {
   border-radius: 10px;
   background-color: rgb(252, 206, 213);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Maximum width of the container */
+  width: 100%; /* Full width of the screen */
 }
 
 h1 {
@@ -44,6 +46,16 @@ button:hover {
 button {
   animation: shake-infinite 0.5s ease infinite; /* Apply shake animation continuously */
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2em; /* Smaller font size on smaller screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Adjust padding on smaller screens */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
 
 @keyframes shake-once {
   0% { transform: translateX(0); }
