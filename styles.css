@@ -13,11 +13,12 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgb(252, 206, 213);
+  background-color: rgba(252, 206, 213, 0.8); /* Semi-transparent background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 100%;
   margin-top: 20px; /* Optional: Add some spacing from the top */
+  /* opacity: 0.9;  Uncomment if you want to use opacity instead */
 }
 
 h1 {
