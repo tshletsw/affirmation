@@ -1,10 +1,10 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align to the top */
   height: 100vh;
+  margin: 0;
   background: url('collage2.png') no-repeat center center;
   background-size: cover;
 }
@@ -15,8 +15,9 @@ body {
   border-radius: 10px;
   background-color: rgb(252, 206, 213);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 600px; /* Maximum width of the container */
-  width: 100%; /* Full width of the screen */
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px; /* Optional: Add some spacing from the top */
 }
 
 h1 {
