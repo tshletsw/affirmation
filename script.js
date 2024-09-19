@@ -1,9 +1,9 @@
-document.getElementById('fetchButton').addEventListener('click', fetchAffirmation);
-
 async function fetchAffirmation() {
   try {
     console.log('Fetching affirmation...');
-    const response = await fetch('https://www.affirmations.dev/');
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const apiUrl = 'https://www.affirmations.dev/';
+    const response = await fetch(proxyUrl + apiUrl);
     const data = await response.json();
     console.log('Affirmation Data:', data);
 
