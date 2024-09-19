@@ -7,7 +7,6 @@ async function fetchAffirmation() {
     const data = await response.json();
     console.log('Affirmation Data:', data);
 
-    // Ensure we have the correct response structure
     if (data && data.affirmation) {
       document.getElementById('affirmation').textContent = data.affirmation;
     } else {
