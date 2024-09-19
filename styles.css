@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/collage2.png') no-repeat center center; /* Add your image URL here */
+    background-size: cover; /* This ensures the image covers the entire background */
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(252, 206, 213);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #ff6f61;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5440;
+  }
+  
+  /* Existing styles */
+
+#affirmation {
+    margin-top: 20px;
+    font-style: italic;
+    animation: shake-once 0.5s ease; /* Apply shake animation only once */
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: shake-infinite 0.5s ease infinite; /* Apply shake animation continuously */
+  }
+  
+  button:hover {
+    background-color: #ff5440;
+  }
+  
+  @keyframes shake-once {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(5deg); }
+    50% { transform: translateX(5px) rotate(-5deg); }
+    75% { transform: translateX(-5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes shake-infinite {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(5deg); }
+    50% { transform: translateX(5px) rotate(-5deg); }
+    75% { transform: translateX(-5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+  }
+  
