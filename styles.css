@@ -1,13 +1,14 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url('/collage2.png') no-repeat center center; /* Add your image URL here */
-    background-size: cover; /* This ensures the image covers the entire background */
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('collage2.png') no-repeat center center; /* Adjust path if needed */
+  background-size: cover;
+}
+
   
   .container {
     text-align: center;
